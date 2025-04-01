@@ -22,23 +22,9 @@ plt.subplot(2, 1, 1)
 plt.plot(t, audio, color="b")
 plt.xlabel("Tiempo (s)")
 
-
 plt.ylabel("Amplitud")
-plt.title("Señal /i/ Lenta en el Tiempo")
+plt.title("Señal /o/ Lenta en el Tiempo")
 plt.grid()
-
-# Transformada de Fourier (FFT) para ver el espectro
-#N = len(audio)
-#fft_audio = np.abs(fft(audio))[:N//2]  # Tomamos solo la mitad positiva
-#frecuencias = np.linspace(0, frecuencia_muestreo/2, N//2)
-
-# Graficar la FFT
-#plt.subplot(2, 1, 2)
-#plt.plot(frecuencias, fft_audio, color="r")
-#plt.xlabel("Frecuencia (Hz)")
-#plt.ylabel("Magnitud")
-#plt.title("Espectro de Frecuencia de la Voz")
-#plt.grid()
 
 plt.tight_layout()
 plt.show()

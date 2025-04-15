@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.io import wavfile
 
 # Leer el archivo de audio
-fs, data = wavfile.read('grabacion_lenta.wav')  # fs: frecuencia de muestreo, data: señal
+fs, data = wavfile.read('grabacion_rapida.wav')  # fs: frecuencia de muestreo
 
 # Si el audio es estéreo, tomar solo un canal
 if len(data.shape) > 1:
@@ -12,9 +12,9 @@ if len(data.shape) > 1:
 # Crear vector de tiempo
 t = np.linspace(0, len(data)/fs, num=len(data))
 
-# Seleccionar el segmento entre 0.78 y 0.84 segundos
-start_time = 0.78
-end_time = 0.84
+# Seleccionar el segmento entre segundos
+start_time = 0
+end_time = 3000
 segment_mask = (t >= start_time) & (t <= end_time)
 
 segment = data[segment_mask]
@@ -32,14 +32,11 @@ positive_magnitude = np.abs(fft_values[:N // 2])
 # Graficar la FFT
 plt.figure(figsize=(10, 5))
 plt.plot(positive_freqs, positive_magnitude, color='red')
-plt.title("FFT del Segmento 0.78s - 0.84s (Señal /i/ lenta)")
+#plt.title("FFT del Segmento 0.895s - 0.935s (Señal /o/ rápida)")
+plt.title("FFT de 1-Período (Señal /o/ rápida)")
 plt.xlabel("Frecuencia (Hz)")
 plt.ylabel("Magnitud")
 plt.grid(True)
 plt.tight_layout()
 plt.show()
-
-
-# 1 PERIODO #########################################
-
 

@@ -44,7 +44,6 @@ Install dependencies with:
 
 ```bash
 pip install numpy scipy matplotlib sounddevice librosa
-```markdown
 
 ▶️ How to Run
 Optional: record your own voice

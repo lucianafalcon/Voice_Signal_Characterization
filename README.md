@@ -1,4 +1,4 @@
-# 🎙️ Voice Signal Analysis / Análisis de Señal de Voz
+# 🎙️ Voice Signal Analysis / Análisis de la Señal de Voz
 
 This repository contains a signal processing project focused on the spectral and temporal analysis of human voice using Python.  
 
@@ -63,7 +63,7 @@ Output .wav files will be saved in the same directory.
 
 The full project report is available here:
 
-📎 Señales___Sistemas___EN.pdf 
+ [informe.pdf](./technical_report_en.pdf )
 
 ## 🧠 Summary
 
@@ -144,7 +144,7 @@ Los archivos .wav de salida se guardarán en el mismo directorio.
 
 El informe completo del proyecto disponible en:
 
-📎 Señales___Sistemas___ES.pdf 
+ [informe.pdf](./informe_tecnico_es.pdf) 
 
 ## 🧠 Resumen
 

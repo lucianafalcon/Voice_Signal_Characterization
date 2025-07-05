@@ -44,29 +44,29 @@ Install dependencies with:
 
 ```bash
 pip install numpy scipy matplotlib sounddevice librosa
-
+```
 
 
 ▶️ How to Run
 Optional: record your own voice
 
-bash
+```bash
 Copy
 Edit
 python 0_grabacion_voz.py
-
+```
 ---
 
 Run the analysis scripts
 For example:
 
-bash
+```bash
 Copy
 Edit
 python 1_fft_completa_mejorada.py
 python 2_TD-PSOLA.py
 python 3_TFCT_disminucion_velocidad_señal_rapida_mejorada.py
-
+```
 Output .wav files will be saved in the same directory.
 
 📄 Report

@@ -1,6 +1,6 @@
 # 🎙️ Voice Signal Analysis / Análisis de la Señal de Voz
 
-This repository contains a signal processing project focused on the spectral and temporal analysis of the human voice, as well as voice modification techniques, using Python.
+This repository contains a signal processing project focused on the spectral and temporal analysis of the human voice, as well as voice modification techniques such as pitch shifting and time stretching, implemented in Python.
 
 ## 📁 Repository Structure
 
@@ -79,7 +79,7 @@ the results demonstrate the value of spectral-temporal processing for speech tra
 ⬇️ Scroll down for the full README in Spanish.
 
 <details>
- <summary>Este repositorio contiene un proyecto de procesamiento de señales enfocado en el análisis espectral y temporal de la voz humana, así como en técnicas de modificación de voz, utilizando Python. </summary>
+ <summary>Este repositorio contiene un proyecto de procesamiento de señales enfocado en el análisis espectral y temporal de la voz humana, así como en técnicas de modificación vocal, como el cambio de pitch y la variación de velocidad, implementadas en Python. </summary>
   
 ## 📁 Estructura del Repositorio
 

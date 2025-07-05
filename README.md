@@ -1,9 +1,6 @@
 # 🎙️ Voice Signal Analysis / Análisis de Señal de Voz
 
-🇬🇧 This repository contains a signal processing project focused on the spectral and temporal analysis of human voice using Python.  
-📄 The full technical report is written in Spanish and available as a PDF file.
-
----
+This repository contains a signal processing project focused on the spectral and temporal analysis of human voice using Python.  
 
 ## 📁 Repository Structure
 
@@ -33,8 +30,6 @@
 | `picasso_lenta_acelerada_TFCT.wav` | Time-compressed using STFT vocoder |
 | `picasso_rapida_lenta_TFCT.wav` | Time-stretched using STFT vocoder |
 
----
-
 ## ⚙️ Requirements
 
 - Python 3.x  
@@ -46,45 +41,119 @@ Install dependencies with:
 pip install numpy scipy matplotlib sounddevice librosa
 ```
 
-
-▶️ How to Run
+## ▶️ How to Run
 Optional: record your own voice
 
 ```bash
-Copy
-Edit
 python 0_grabacion_voz.py
 ```
----
 
 Run the analysis scripts
-For example:
 
+For example:
 ```bash
-Copy
-Edit
 python 1_fft_completa_mejorada.py
 python 2_TD-PSOLA.py
 python 3_TFCT_disminucion_velocidad_señal_rapida_mejorada.py
 ```
 Output .wav files will be saved in the same directory.
 
-📄 Report
+
+## 📄 Report
+
 The full project report is available here:
-📎 Señales___Sistemas___TP.pdf (in Spanish)
 
-🧠 Summary
+📎 Señales___Sistemas___EN.pdf 
+
+## 🧠 Summary
+
 This project explores various techniques for analyzing and transforming speech signals. It includes:
+Spectral analysis using the Fourier Transform (FFT),
+short-Time Fourier Transform (STFT) for spectrograms,
+time-domain and frequency-domain pitch and speed modifications,
+TD-PSOLA and Phase Vocoder techniques, and
+the results demonstrate the value of spectral-temporal processing for speech transformation, pitch shifting, and intelligibility preservation in different use cases.
 
-Spectral analysis using the Fourier Transform (FFT)
-
-Short-Time Fourier Transform (STFT) for spectrograms
-
-Time-domain and frequency-domain pitch and speed modifications
-
-TD-PSOLA and Phase Vocoder techniques
-
-The results demonstrate the value of spectral-temporal processing for speech transformation, pitch shifting, and intelligibility preservation in different use cases.
+---
 
 ⬇️ Scroll down for the full README in Spanish.
-Este repositorio contiene un proyecto de procesamiento de señales centrado en el análisis espectral y temporal de la voz humana.
+
+<details>
+ <summary>Este repositorio contiene un proyecto de procesamiento de señales centrado en el análisis espectral y temporal de la voz humana. </summary>
+  
+## 📁 Estructura del Repositorio
+
+### 🔧 Scripts
+
+| Archivo                                               | Descripción                                                   |
+|--------------------------------------------------------|---------------------------------------------------------------|
+| `0_grabacion_voz.py`                                   | Script para grabar una señal de voz                           |
+| `1_fft_completa_mejorada.py`                           | Análisis FFT usando múltiples períodos                        |
+| `1_fft_segun_periodo_mejorada.py`                      | Análisis FFT de un solo período vocal                         |
+| `1_señales_periodicas_noperiodicas_mejorada.py`        | Identificación de fonemas periódicos y aperiódicos            |
+| `2_TD-PSOLA.py`                                        | Algoritmo TD-PSOLA para modificar el tono                     |
+| `2_espectograma_banda_ancha_angosta_mejorada.py`       | Espectrogramas STFT (banda angosta/ancha)                     |
+| `3_TFCT_aumento_velocidad_señal_lenta_mejorada.py`     | Aceleración mediante vocoder en frecuencia (STFT)             |
+| `3_TFCT_disminucion_velocidad_señal_rapida_mejorada.py`| Desaceleración mediante STFT                                  |
+| `3_decimacion_señal_lenta_mejorada.py`                 | Aceleración por diezmado (dominio temporal)                   |
+| `3_interpolacion_señal_rapida_mejorada.py`             | Desaceleración por interpolación (dominio temporal)           |
+
+### 🎧 Archivos de Audio de Entrada y Salida
+
+| Archivo                              | Descripción                                                        |
+|--------------------------------------|--------------------------------------------------------------------|
+| `grabacion_lenta.wav`                | Grabación lenta de la palabra "Picasso"                            |
+| `grabacion_rapida.wav`               | Grabación rápida de la palabra "Picasso"                           |
+| `picasso_lenta_decimada.wav`         | Señal comprimida en el tiempo mediante diezmado                   |
+| `picasso_rapida_interpolada.wav`     | Señal expandida en el tiempo mediante interpolación               |
+| `picasso_lenta_acelerada_TFCT.wav`   | Señal comprimida en el tiempo mediante vocoder STFT               |
+| `picasso_rapida_lenta_TFCT.wav`      | Señal expandida en el tiempo mediante vocoder STFT                |
+
+
+## ⚙️ Requisitos
+
+Python 3.x
+
+Dependencias: numpy, scipy, matplotlib, sounddevice, librosa
+
+Instala las dependencias con:
+
+```bash
+pip install numpy scipy matplotlib sounddevice librosa
+```
+
+## ▶️ Cómo Ejecutar
+
+Opcional: grabar tu propia voz
+
+```bash
+python 0_grabacion_voz.py
+```
+Ejecutar los scripts de análisis
+
+Por ejemplo:
+
+```bash
+python 1_fft_completa_mejorada.py
+python 2_TD-PSOLA.py
+python 3_TFCT_disminucion_velocidad_señal_rapida_mejorada.py 
+```
+Los archivos .wav de salida se guardarán en el mismo directorio.
+
+## 📄 Informe
+
+El informe completo del proyecto disponible en:
+
+📎 Señales___Sistemas___ES.pdf 
+
+## 🧠 Resumen
+
+Este proyecto explora diversas técnicas para analizar y transformar señales de voz. Incluye:
+Análisis espectral mediante la Transformada de Fourier (FFT),
+transformada de Fourier de Tiempo Corto (STFT) para espectrogramas,
+modificaciones de tono y velocidad en dominio temporal y frecuencia,
+técnicas TD-PSOLA y vocoder de fase, y
+los resultados demuestran la utilidad del procesamiento espectral-temporal para la transformación de la voz, cambio de pitch y preservación de la inteligibilidad en distintas aplicaciones.
+
+
+</details>

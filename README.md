@@ -63,7 +63,7 @@ Output .wav files will be saved in the same directory.
 
 The full project report is available here:
 
- [informe.pdf](./technical_report_en.pdf )
+ [technical report](./technical_report_en.pdf )
 
 ## 🧠 Summary
 
@@ -144,7 +144,7 @@ Los archivos .wav de salida se guardarán en el mismo directorio.
 
 El informe completo del proyecto disponible en:
 
- [informe.pdf](./informe_tecnico_es.pdf) 
+ [informe técnico](./informe_tecnico_es.pdf) 
 
 ## 🧠 Resumen
 

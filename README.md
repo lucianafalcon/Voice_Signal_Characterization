@@ -104,7 +104,7 @@ the results demonstrate the value of spectral-temporal processing for speech tra
 |--------------------------------------|--------------------------------------------------------------------|
 | `grabacion_lenta.wav`                | Grabación lenta de la palabra "Picasso"                            |
 | `grabacion_rapida.wav`               | Grabación rápida de la palabra "Picasso"                           |
-| `picasso_lenta_decimada.wav`         | Señal comprimida en el tiempo mediante diezmado                   |
+| `picasso_lenta_decimada.wav`         | Señal comprimida en el tiempo mediante decimación                   |
 | `picasso_rapida_interpolada.wav`     | Señal expandida en el tiempo mediante interpolación               |
 | `picasso_lenta_acelerada_TFCT.wav`   | Señal comprimida en el tiempo mediante vocoder STFT               |
 | `picasso_rapida_lenta_TFCT.wav`      | Señal expandida en el tiempo mediante vocoder STFT                |

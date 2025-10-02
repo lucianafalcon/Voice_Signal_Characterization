@@ -87,18 +87,6 @@ the results demonstrate the value of spectral-temporal processing for speech tra
 | `3_decimacion_señal_lenta_mejorada.py`                 | Aceleración por diezmado (dominio temporal)                   |
 | `3_interpolacion_señal_rapida_mejorada.py`             | Desaceleración por interpolación (dominio temporal)           |
 
-### 🎧 Archivos de Audio de Entrada y Salida
-
-| Archivo                              | Descripción                                                        |
-|--------------------------------------|--------------------------------------------------------------------|
-| `grabacion_lenta.wav`                | Grabación lenta de la palabra "Picasso"                            |
-| `grabacion_rapida.wav`               | Grabación rápida de la palabra "Picasso"                           |
-| `picasso_lenta_decimada.wav`         | Señal comprimida en el tiempo mediante decimación                   |
-| `picasso_rapida_interpolada.wav`     | Señal expandida en el tiempo mediante interpolación               |
-| `picasso_lenta_acelerada_TFCT.wav`   | Señal comprimida en el tiempo mediante vocoder STFT               |
-| `picasso_rapida_lenta_TFCT.wav`      | Señal expandida en el tiempo mediante vocoder STFT                |
-
-
 ## ⚙️ Requisitos
 
 Python 3.x

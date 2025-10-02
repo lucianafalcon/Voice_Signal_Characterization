@@ -19,17 +19,6 @@ This repository contains a signal processing project focused on the spectral and
 | `3_decimacion_señal_lenta_mejorada.py` | Speed-up via decimation (time domain) |
 | `3_interpolacion_señal_rapida_mejorada.py` | Slow-down via interpolation (time domain) |
 
-### 🎧 Audio Input and Output Files
-
-| File | Description |
-|------|-------------|
-| `grabacion_lenta.wav` | Slow recording of the word "Picasso" |
-| `grabacion_rapida.wav` | Fast recording of the word "Picasso" |
-| `picasso_lenta_decimada.wav` | Time-compressed signal using decimation |
-| `picasso_rapida_interpolada.wav` | Time-stretched signal using interpolation |
-| `picasso_lenta_acelerada_TFCT.wav` | Time-compressed using STFT vocoder |
-| `picasso_rapida_lenta_TFCT.wav` | Time-stretched using STFT vocoder |
-
 ## ⚙️ Requirements
 
 - Python 3.x  
